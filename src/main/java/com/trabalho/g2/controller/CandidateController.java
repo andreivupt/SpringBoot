@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.Valid;
+
 
 @RestController
 @RequestMapping("/election")
@@ -29,7 +31,6 @@ public class CandidateController {
 
     }
 
-    /*
     @GetMapping("/add")
     public ModelAndView add(Candidate candidate) {
 
@@ -67,5 +68,4 @@ public class CandidateController {
 
         return findAll();
     }
-    */
 }
